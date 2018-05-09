@@ -1,0 +1,48 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+	<div class="panel panel-default" ng-init="getSweet()">
+		<div class="panel-heading">
+			<p class="panel-title"><strong>Sweets</strong></p>
+		</div>
+		<div class="panel-body" style="width: 100%;">
+			<table class="table" style="width:100%;">
+				<thead>
+					<tr>
+						<th>Sweet Name</th>
+						<th>State(Famous)</th>
+						<th>Price(₹)</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="sweet in sweets">
+
+						<td>{{ sweet.name }}</td>
+						<td>{{ sweet.state }}</td>
+						<td>{{ sweet.price }}</td>
+						<td>
+							<a href="#/sweet/{{sweet._id}}/read" class="btn  btn-light"> Show  </a>
+							<a href="#/sweet/{{sweet._id}}/update" class="btn btn-primary">Edit  </a>
+							<a ng-click="deleteSweet(sweet._id)" class="btn btn-danger">Delete </a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<br><br><br><br><br><br><br><br><br>
+		<br>
+		<br>
+
+
+
+	</div>
+</body>
+
+</html>

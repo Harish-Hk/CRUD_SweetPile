@@ -1,0 +1,38 @@
+<html>
+
+<head></head>
+
+<body>
+	<div class="panel panel-default" ng-init="showSweet()">
+		<div class="panel-heading">
+			<p class="panel-title"><span style="color:#5bc0de;" class="glyphicon glyphicon-edit"> </span> Edit Sweets</p>
+		</div>
+
+		<div class="panel-body">
+			<form ng-submit="updateSweet()">
+				<div class="form-group">
+					<label for="name">Sweet Name:</label>
+					<input type="text"  placeholder="Name"  class="form-control" id="name" ng-model="sweet.name" value="sweet.name" required autofocus>
+				</div>
+				<div class="form-group">
+					<label for="state">State(Famous):</label>
+					<input type="text" placeholder="State Name" class="form-control" id="state" ng-model="sweet.state" value="sweet.state" required autofocus>
+				</div>
+				<div class="form-group">
+					<label for="price">Price:</label>
+					<input type="text" placeholder="Price(in numbers)" pattern="^[0-9]*$" class="form-control" id="price" ng-model="sweet.price" value="sweet.price" required autofocus>
+				</div>
+				<div class="form-group">
+					<label for="quantity">Quantity:</label>
+					<input type="text" pattern="^[0-9]*$" placeholder="Quantity(in numbers)"class="form-control" id="quantity" ng-model="sweet.quantity" value="sweet.quantity" required autofocus>
+				</div>
+
+
+				<button type="submit" class="btn btn-success">Update</button>
+				<a href="#/sweet" class="btn btn-danger"> Cancel</a>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>

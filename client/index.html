@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+
+	<title>MIL:Miracle Innovation Labs</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge IE=11" />
+	<meta http-equiv="x-ua-compatible" content="ie=7">
+	<!--render Internet Explorer v7 standards mode regardless of doctype-->
+	<meta http-equiv="x-ua-compatible" content="ie=emulateie7">
+	<!--render according to doctype, standards is v7 and quirks is v5-->
+	<meta http-equiv="x-ua-compatible" content="ie=8">
+	<!--render Internet Explorer v8 standards mode regardless of doctype-->
+	<meta http-equiv="x-ua-compatible" content="ie=emulateie8">
+	<!--render according to doctype, standards is v8 and quirks is v5-->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<!--render using latest version of Internet Explorer-->
+	<meta http-equiv="x-ua-compatible" content="ie=5">
+	<!--render using Internet Explorer v7 quirks mode, which is like v5-->
+	<meta http-equiv="x-ua-compatible" content="ie=5; ie=8">
+	<!--render using v8 if available, otherwise use v5 instead of v6 or v7-->
+	<meta http-equiv="x-ua-compatible" content="chrome=1">
+	<!--render using Chrome if available-->
+	<meta http-equiv="x-ua-compatible" content="ie=emulateie7; chrome=1">
+	<!--render Chrome if available or Internet Explorer v7-->
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase|Titan+One|Oxygen" rel="stylesheet">
+	<link rel="stylesheet" href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css">
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body style="background-image:url(ros.jpg); background-repeat:no-repeat; background-size: cover">
+
+	<div class="navbar navbar-header container-fluid" style="background-color:#37404c; color: white; opacity: 0.8;">
+	<h3 style="font-family: 'Cormorant Unicase', serif; font-size: 50px; font-display: block; font-weight: bolder; color:aliceblue;"><img src="swt.png" height="50px" width="50px"> <a href="#/" style="text-decoration: none; color: aliceblue;">Sweet Pile</a></h3>
+
+	</div>
+	<div class="container" style="color: black; font-weight: 600;">
+		<div>
+
+
+		<br>
+			<br>
+			
+
+			<div style="width:68%;font-family: 'Oxygen', sans-serif;; float:right;" class="container">
+				<div ng-view></div>
+			</div>
+
+			<div class="card-decks" style=" width: 30%; color: white; font-family: 'Oxygen', sans-serif;">
+				<div class="card border-dark" style="background-image: url(sweet6.jpg); background-size: cover; width: 18rem;">
+					<div class="card-body text-dark" style="color: white;">
+						<h5 class="card-title" style="font-family: 'Oxygen', sans-serif;">Available Sweets List</h5>
+						<p class="card-text" style="font-family: 'Oxygen', sans-serif;">Want to have a real quick look of the available sweets</p>
+						<a href="#/sweet" class="card-link btn btn-dark">Sweets List</a>
+					</div>
+				</div>
+
+				<br>
+
+				<div class="card border-dark " style="background-image: url(sweet5.jpg); background-size: cover; width: 18rem;">
+					<div class="card-body text-dark">
+						<h5 class="card-title">Add New Sweet</h5>
+						<p class="card-text">Want to add a Sweet into the Store </p>
+						<a href="#/sweet/create" class="card-link btn btn-dark">Add Sweet</a>
+					</div>
+				</div>
+			</div>
+			<br>
+
+			<br>
+			<br>
+		</div>
+	</div>
+	<footer class="container-fluid footer text-center navbar-fixed-bottom" style=" height:50px;  font-family: 'Oxygen', sans-serif; background-color:#37404c; color: white; position:fixed; bottom:0;">
+		<div><br>
+			<p style="position: relative; top: 2;">2018 © hmadugula@miraclesoft.com</p>
+		</div><br>
+	</footer>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+	<script src="app.js"></script>
+	<script src="controllers/controllers.js"></script>
+
+</body>
+
+</html>

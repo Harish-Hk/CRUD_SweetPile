@@ -1,0 +1,16 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "Sweet store app using MEAN Stack where any sweet store shopkeeper can add (CREATE)the details of the sweets he's prepared,get(RETRIEVE) the details of the available sweets,how many have been sold (UPDATE) and remove(DELETE) the sweet details if completely sold",
+  "main": "readme.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "hk",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.13.12"
+  }
+}

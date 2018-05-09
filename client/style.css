@@ -1,0 +1,11 @@
+.nav {
+	text-align: center;
+	display: inline-block;
+}
+
+@font-face {
+	font-family: "Raceway Medium";
+	src: url("racew17.eot?") format("eot"), url("racew17.woff") format("woff"), url("racew17.ttf") format("truetype"), url("racew17.svg#RacewayMedium") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}

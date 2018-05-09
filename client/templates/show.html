@@ -1,0 +1,26 @@
+<html>
+
+<head></head>
+
+<body>
+	<div class="panel panel-default" ng-init="showSweet()">
+		<div class="panel-heading">
+			<p class="panel-title"> Sweets</p>
+		</div>
+		<div class="panel-body">
+			<form>
+				<div class="form-group">
+					<label class="form-control">Sweet Name: {{ sweet.name }}</label>
+					<label class="form-control">State(Famous): {{ sweet.state }}</label>
+					<label class="form-control">Price: {{ sweet.price }}</label>
+					<label class="form-control">Quantity: {{ sweet.quantity }}</label>
+
+					<label class="form-control">ID: {{ sweet._id }}</label>
+					<a href="#/sweet" class="btn btn-danger"> Cancel</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
